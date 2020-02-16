@@ -23,8 +23,8 @@ module.exports = {
         },
         // set your own valid certificate files.
         options: {
-            cert: fs.readFileSync(`${__dirname}/certs/cgyinfo.com.crt`, 'utf8'),
-            key: fs.readFileSync(`${__dirname}/certs/cgyinfo.com.key`, 'utf8'),
+            cert: fs.readFileSync(`${__dirname}/certs/server.crt`, 'utf8'),
+            key: fs.readFileSync(`${__dirname}/certs/server.key`, 'utf8'),
             rejectUnauthorized: false,
             requestCert: false
         }
