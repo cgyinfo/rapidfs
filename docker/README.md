@@ -1,4 +1,4 @@
-# CGYINFO: RapidFS docker image
+# CGYINFO: RapidFS Docker Image
 
 ## Statement
 
@@ -20,4 +20,6 @@ The rapidfs service exposed port **8878**,you can bind the local port.
 
 ## Epilogue
 
-![CGYINFO](https://www.cgyinfo.com/img/logo.png) [CGYINFO](https://www.cgyinfo.com)
+![LOGO](https://www.cgyinfo.com/logo.png)
+
+Please refer to the official website for details: [https://www.cgyinfo.com](https://www.cgyinfo.com)

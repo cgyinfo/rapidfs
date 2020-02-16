@@ -157,6 +157,8 @@ function createHashDirectory(uid) {
  * /upload: {uid token files}
  */
 express_app.post('/upload', fileUpload(), async function(req, res) {
+    let { uid } = req.query || req.body || req.params;
+
     let files = req.files;
     if (!files || !files.file) {
         let result = { error: ERR.PARAMS, reason: '未上传文件' };
@@ -164,7 +166,7 @@ express_app.post('/upload', fileUpload(), async function(req, res) {
     }
 
     let file = files.file;
-    let filePath = await createHashDirectory(file.md5).catch(err => {
+    let filePath = await createHashDirectory(uid).catch(err => {
         let result = { error: ERR.SYSTEM, reason: '创建目录失败' };
         return res.status(500).send(JSON.stringify(result))
     });

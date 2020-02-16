@@ -6,7 +6,8 @@ rapidfs is a http file upload service.
 
 ## Usage
 
-rapidfs is a nodejs application service for http file uploading. System operation environment requirements:
+rapidfs is a nodejs application service for http file uploading.
+System running environment requirements:
 
 -   nodejs >= 12.14
 -   npm >= 6.13

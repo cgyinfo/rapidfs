@@ -11,7 +11,12 @@ exports = module.exports = async function(req, res, next) {
     let { uid, token } = req.query || req.params;
 
     if (!uid || !token) {
-        let result = { error: ERR.PARAMS, reason: '缺少TOKEN' };
+        let result = { error: ERR.PARAMS, reason: '缺少参数' };
+        return res.status(403).send(JSON.stringify(result));
+    }
+
+    if (uid.length < 8) {
+        let result = { error: ERR.PARAMS, reason: 'uid无效' };
         return res.status(403).send(JSON.stringify(result));
     }
 
@@ -26,7 +31,7 @@ exports = module.exports = async function(req, res, next) {
     }
     let user = JSON.parse(value);
     if (token !== user.token) {
-        let result = { error: ERR.REDIS, reason: 'TOKEN无效' };
+        let result = { error: ERR.PARAMS, reason: 'token无效' };
         return res.status(401).send(JSON.stringify(result));
 
     }
