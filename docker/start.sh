@@ -1,9 +1,12 @@
 #!/bin/bash
 
-new_val=$REDIS_ADDRESS
-old_val="localhost"
+if [ $REDIS_ADDRESS ]; then
+	sed -i "s/localhost/$REDIS_ADDRESS/g" /opt/rapidfs/config.js
+fi
 
-sed -i "s/$old_val/$new_val/g" /opt/rapidfs/config.js
+if [ $REDIS_PORT ]; then
+	sed -i "s/3306/$REDIS_PORT/g" /opt/rapidfs/config.js
+fi
 cat  /opt/rapidfs/config.js > /opt/rapidfs/config.js.bak
 
 echo "start rapidfs daemon"
