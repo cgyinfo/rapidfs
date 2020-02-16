@@ -17,4 +17,4 @@ node index.js
 
 ## Epilogue
 
-![CGYINFO](https://www.cgyinfo.com/img/logo.png) [CGYINFO](https://www.cgyinfo.com)
+![LOGO](https://www.cgyinfo.com/logo-blue.png) Please refer to the official website for details: [https://www.cgyinfo.com](https://www.cgyinfo.com)
