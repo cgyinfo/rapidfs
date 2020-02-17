@@ -31,8 +31,7 @@ module.exports = {
     },
 
     storage: {
-        //path: 'D:/TMP/test'
-        path: '/var/rapidfs'
+		path: `${__dirname}/data`
     },
 
     // REDIS
