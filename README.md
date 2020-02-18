@@ -15,6 +15,8 @@ System running environment requirements:
 ```
 node index.js
 ```
+## Directories
+
 
 ## Epilogue
 
