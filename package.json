@@ -1,0 +1,25 @@
+{
+    "name": "rapidfs",
+    "version": "1.0.0",
+    "description": "RapidFS is a web management system for file uploading and downloading.",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "test": "node test.js"
+    },
+    "keywords": [
+        "RapidFS",
+        "rapidfs",
+        "rfs"
+    ],
+    "author": "kenny <zhouxiaochuan@cgyinfo.com>",
+    "license": "LGPL-3.0",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "express-fileupload": "^1.1.6",
+        "log4js": "^6.1.2",
+        "redis": "^3.0.2"
+    }
+}
