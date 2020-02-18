@@ -11,6 +11,8 @@ rapidfs is a nodejs application service for http file uploading. System running 
 -   nodejs >= 12.14
 -   npm >= 6.13
 
+program execute:
+
 ```
 npm run start
 ```
