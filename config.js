@@ -31,7 +31,7 @@ module.exports = {
     },
 
     storage: {
-		path: `${__dirname}/data`
+        path: `${__dirname}/data`
     },
 
     // REDIS
