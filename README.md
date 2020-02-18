@@ -21,3 +21,5 @@ node index.js
 ![LOGO](https://www.cgyinfo.com/logo.png)
 
 Please refer to the official website for details: [https://www.cgyinfo.com](https://www.cgyinfo.com)
+
+Please refer to the source code for details: [https://github.com/cgyinfo](https://github.com/cgyinfo)
