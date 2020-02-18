@@ -17,6 +17,10 @@ node index.js
 ```
 ## Directories
 
+[certs] ssl certificate files, server.crt and server.key.
+[data] a hash directories where contain uploading files.
+[logs] server log file
+[utils] utility tool files
 
 ## Epilogue
 
